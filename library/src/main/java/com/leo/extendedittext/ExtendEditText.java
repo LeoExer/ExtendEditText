@@ -24,17 +24,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * 基于EditText扩展的文本编辑器</br>
- *
- * <ul>支持
- *  <li>粗体</li>
- *  <li>斜体</li>
- *  <li>下划线</li>
- *  <li>删除线</li>
- *  <li>链接</li>
- *  <li>着重号</li>
- *  <li>引用</li>
- * </ul>
+ * 基于EditText扩展的文本编辑器
  *
  * Created by Leo on 2017/3/17.
  */

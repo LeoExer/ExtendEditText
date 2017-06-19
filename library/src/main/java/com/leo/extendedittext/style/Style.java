@@ -66,7 +66,6 @@ public abstract class Style {
 
     /**
      * 是否覆盖设置样式
-     * @return 若返回true, 则样式将会覆盖设置; 否则每次只能设置一种样式
      */
     public void setCover(boolean cover) {
         this.mCover = cover;
