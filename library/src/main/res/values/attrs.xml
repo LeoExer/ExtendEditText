@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExtendEditText">
+        <attr name="rule">
+            <enum name="EXCLUSIVE_EXCLUSIVE" value="0"/>
+            <enum name="EXCLUSIVE_INCLUSIVE" value="1"/>
+            <enum name="INCLUSIVE_EXCLUSIVE" value="2"/>
+            <enum name="INCLUSIVE_INCLUSIVE" value="3"/>
+        </attr>
+
+        <attr name="bulletColor" format="color|reference"/>
+        <attr name="bulletRadius" format="dimension|reference"/>
+        <attr name="bulletGapWidth" format="dimension|reference"/>
+
+        <attr name="quoteColor" format="color|reference"/>
+        <attr name="quoteStripeWidth" format="dimension|reference"/>
+        <attr name="quoteGapWidth" format="dimension|reference"/>
+        
+        <attr name="linkColor" format="color|reference"/>
+        <attr name="drawUnderLine" format="boolean|reference"/>
+
+        <attr name="enableHistory" format="boolean|reference"/>
+        <attr name="historyCapacity" format="integer|reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:elevation="5dp">
+
+        <ImageButton
+            android:id="@+id/ib_redo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_redo"
+            android:scaleType="fitCenter"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/ib_undo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_undo"
+            android:scaleType="fitCenter"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_below="@id/top_bar"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <com.leo.extendedittext.ExtendEditText
+        android:id="@+id/extend_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:gravity="start"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/bottom_bar"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/normal_text_size"
+        android:scrollbars="none"
+        android:background="@android:color/transparent"
+        app:bulletColor="@color/colorPrimary"
+        app:bulletRadius="@dimen/bullet_radius"
+        app:bulletGapWidth="@dimen/bullet_gap_width"
+        app:quoteColor="@color/colorPrimary"
+        app:quoteStripeWidth="@dimen/quote_stripe_width"
+        app:quoteGapWidth="@dimen/quote_gap_width"
+        app:linkColor="@color/colorPrimaryDark"
+        app:drawUnderLine="true"
+        app:enableHistory="true"
+        app:historyCapacity="50"
+        app:rule="EXCLUSIVE_EXCLUSIVE">
+    </com.leo.extendedittext.ExtendEditText>
+
+    <include layout="@layout/edit_text_format_layout"
+        android:id="@+id/bottom_bar"/>
+
+</RelativeLayout>

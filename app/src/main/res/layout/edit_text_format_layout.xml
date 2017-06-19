@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:scrollbars="none"
+    android:background="@color/colorPrimaryDark" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_bold"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/edit_text_bold_selector"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_italic"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/edit_text_italic_selector"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_underline"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/edit_text_underline_selector"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_strikethrough"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/edit_text_strikethrough_selector"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_link"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/edit_text_link_selector"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_bullet"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_bullet_normal"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_quote"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_quote_normal"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib_clear"
+            android:contentDescription="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_clear_normal"
+            android:scaleType="fitXY"
+            android:background="?android:selectableItemBackground">
+        </ImageButton>
+    </LinearLayout>
+
+</HorizontalScrollView>
